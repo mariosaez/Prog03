@@ -6,15 +6,21 @@ import java.util.Scanner;
 public class ejercicio01 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-	int a = sc.nextInt(), b = sc.nextInt();
+	int a, b, resultado, indice;
 	
+	System.out.println("Introduzca el valor A");
+	a = sc.nextInt();
+		
+	System.out.println("Introduzca el valor B");	
+	b = sc.nextInt();
 	
-	System.out.println("Introduzca el numero A");
-		
-		
-	System.out.println("Introduzca el numero A");	
-		
-
-	}
-
+	resultado = 0;
+	indice = a+1;
+	
+	while(indice<=b-1){
+		resultado= resultado + indice;
+		indice=indice+1;
+   }
+	System.out.println(resultado);	
+}
 }
