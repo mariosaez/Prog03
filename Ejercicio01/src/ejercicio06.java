@@ -10,30 +10,30 @@ public class ejercicio06 {
 			// TODO Auto-generated method stub
 			Scanner t= new Scanner (System.in);
 	
-			int n,sp,si;
+			int n,p,i;
 			
 			
 			System.out.print ("Ingrese un numero:");
 			n = t.nextInt();
-			si=n;
+			i=n;
 			
 			System.out.print ("Ingrese un numero:");
 			n = t.nextInt();
-			sp=n;
+			p=n;
 			while (n!=0) {
 				
 				System.out.print ("Ingrese un numero:");
 				n = t.nextInt();
-				si=si + n;
+				i=i + n;
 				
 				System.out.print ("Ingrese un numero:");
 				n = t.nextInt();
-				sp=sp + n;
+				p=p + n;
 
 			
 		}
-			System.out.println(si);
-			System.out.println(sp);	
+			System.out.println(i);
+			System.out.println(p);	
 		
 	}
 }
