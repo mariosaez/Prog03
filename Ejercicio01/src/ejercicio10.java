@@ -4,26 +4,19 @@ public class ejercicio10 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner t= new Scanner (System.in);
-		int i, n, suma;
+		int  n, contador; boolean primo;
 		
-		System.out.print ("Ingrese un numero:");
+		System.out.println("Introduzca el n");
 		n = t.nextInt();
-		suma=0;
-		for(i=1;i<n;i++){
-
-			if(n%i==0){
-			suma=suma+i;
-			}
-		}
-			if(suma==n){
-				System.out.println("Este numero es Perfecto");
-			}
-			if(suma!=n){
-				System.out.println("Este numero no es Perfecto");
-				
-			}
+		contador=2;
+		primo=true;
 		
-		
+			while ((primo) && (contador!=n)) {
+				if (n % contador ==0);
+				primo=true;
+				contador++;
+			}
+			
+	System.out.println(primo);	
 }
 }
-
