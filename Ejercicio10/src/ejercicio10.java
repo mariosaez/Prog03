@@ -4,19 +4,34 @@ public class ejercicio10 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner t= new Scanner (System.in);
-		int  n, contador; boolean primo;
+		int  n, contador, cercano, y, i; 
+		boolean primo;
 		
-		System.out.println("Introduzca el n");
+		System.out.println("Introduzca el numero");
 		n = t.nextInt();
-		contador=2;
-		primo=true;
 		
-			while ((primo) && (contador!=n)) {
-				if (n % contador ==0);
-				primo=true;
-				contador++;
+		
+		primo=false;
+		cercano=0;
+		y=1;	
+		
+		
+		while (primo==false) {
+			contador=0;	
+			cercano=n+y;
+			
+			for(i=1;i<=cercano;i++ ){
+				if (cercano%i==0){
+					contador++;
+				}
 			}
 			
-	System.out.println(primo);	
+				if (contador==2){
+				primo=true;
+				}
+				y++;
+		
+}
+					System.out.println("El numero "+cercano+" es el primo mas cercano");	
 }
 }
